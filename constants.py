@@ -18,7 +18,7 @@ MEDIUM_QUALITY_CAMERA_CONFIG = {
 }
 
 LOW_QUALITY_CAMERA_CONFIG = {
-    "pixel_shape" : (480, 853),
+    "pixel_shape" : (480, 854),
 }
 
 DEFAULT_POINT_DENSITY_2D = 25 
@@ -83,7 +83,7 @@ TEMPLATE_TEXT_FILE = os.path.join(THIS_DIR, "text_template.tex")
 
 LOGO_PATH = os.path.join(IMAGE_DIR, "logo.png")
 
-FFMPEG_BIN = "ffmpeg"
+FFMPEG_BIN = "avconv"
 
 
 ### Colors ###
@@ -150,9 +150,6 @@ PALETTE = COLOR_MAP.values()
 locals().update(COLOR_MAP)
 for name in filter(lambda s : s.endswith("_C"), COLOR_MAP.keys()):
     locals()[name.replace("_C", "")] = locals()[name]
-
-
-
 
 
 

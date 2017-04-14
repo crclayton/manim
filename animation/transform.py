@@ -304,5 +304,3 @@ class TransformAnimations(Transform):
         self.end_anim.update(alpha)
         Transform.update(self, alpha)
 
-
-

@@ -49,4 +49,3 @@ class WriteStuff(Scene):
     def construct(self):
         self.play(Write(TextMobject("Stuff").scale(3)))
 
-
